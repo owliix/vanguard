@@ -159,7 +159,7 @@ h1{
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
-
+@media screen and (min-width: 800px) {
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -173,6 +173,7 @@ h1{
     .bar-chart {
         width: 50%;
     }
+}
 
 
 /* MEDIA QUERIES (LARGE) */
