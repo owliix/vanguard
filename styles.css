@@ -92,6 +92,7 @@ h3{
 .header{
     background-color: var(--black);
     padding: 40px;
+    padding-top: 0px;
     padding-left: 20px;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
@@ -103,7 +104,7 @@ h3{
 
 .header> h1{
     grid-column-start: 2;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 #nav{
@@ -112,8 +113,23 @@ h3{
     text-align: center;
 }
 
+#nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
 li > a{
+    font-size: 1.25em;
+    font-weight: bold;
     text-decoration: none;
+    color: var(--blue);
+}
+
+li > a:hover{
+    background-color: var(--blue);
+    color: var(--black);
+    padding: 10px;
 }
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -147,6 +163,33 @@ li > a{
 
 .innovcontain > h2{
     font-size: 2em;
+    color: var(--white);
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.innovcontain > p{
+    color: var(--white);
+    line-height: 1.25em;
+    margin: 20px;
+    padding-bottom: 25px;
+}
+
+.innovcontain{
+    backdrop-filter: blur(10px);
+    padding-bottom: 20px;
+}
+
+.innovcontain > a{
+    text-decoration: none;
+    font-size: 1.15em;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: var(--white);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #expertise{
@@ -180,10 +223,16 @@ li > a{
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 #growthconsult > h3{
     margin: 15px;
+}
+
+#growthconsult:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate(0, -10px);
 }
 
 #investmentsol{
@@ -192,10 +241,16 @@ li > a{
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 #investmentsol > h3{
     margin: 15px;
+}
+
+#investmentsol:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate(0, -10px);
 }
 
 #businessaccel{
@@ -204,10 +259,16 @@ li > a{
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 #businessaccel > h3{
     margin: 15px;
+}
+
+#businessaccel:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate(0, -10px);
 }
 
 #digtransform{
@@ -216,10 +277,16 @@ li > a{
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 #digtransform > h3{
     margin: 15px;
+}
+
+#digtransform:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate(0, -10px);
 }
 
 #advisory{
@@ -228,10 +295,16 @@ li > a{
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 #advisory> h3{
     margin: 15px;
+}
+
+#advisory:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate(0, -10px);
 }
 
 #corpinnov{
@@ -240,10 +313,16 @@ li > a{
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 80px;
+    transition: 0.5s ease-in-out;
 }
 
 #corpinnov > h3{
     margin: 15px;
+}
+
+#corpinnov:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate(0, -10px);
 }
 
 #provresults{
@@ -255,7 +334,7 @@ li > a{
 #provresults > h2{
     width: 90%;
     max-width: 1200px;
-    margin: 20px;
+    margin: 0 auto;
     margin-left: 50px;
     color: var(--white);
 }
@@ -264,18 +343,43 @@ li > a{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 20px;
     color: var(--white);
     line-height: 1.25em;
 }
 
-#results > h3{
+#tablevis > h3{
     margin: 20px;
     color: var(--white);
     font-size: 2em;
 }
 
 table{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
 
+tr{
+    border: 2px solid var(--charcoal);
+}
+
+tr:nth-child(odd){
+    background-color: var(--charcoal);
+}
+
+th{
+    background-color: var(--black);
+    padding: 20px;
+    border: 2px solid var(--charcoal);
+}
+
+td{
+    padding: 20px;
+    border: 2px solid var(--charcoal);
 }
 
 #growth > h3{
@@ -337,9 +441,90 @@ table{
     color: var(--white);
 }
 
+#contactUs > h2, #contactUs > p{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contactUs > h2{
+    padding: 20px;
+    padding-left: 40px;
+}
+
+form{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+input[type=text]{
+    width: 93%;
+    padding: 15px;
+    border: 3px solid var(--blue);
+}
+
+input[type=email]{
+    width: 93%;
+    padding: 15px;
+    border: 3px solid var(--blue);
+}
+
+textarea{
+    width: 93%;
+    padding: 15px;
+    border: 3px solid var(--blue);
+    margin-bottom: 20px;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+input[type=submit]:hover{
+    background-color: var(--red);
+    transition: 0.5s ease-in-out;
+    margin-left: -5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 102%;
+    height: 110%;
+}
+
 #footer{
     background-color: var(--black);
     color: var(--white);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+#footer > p{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#footer > p > a{
+    color: var(--blue);
 }
 
 /* MEDIA QUERIES (MEDIUM) */ 
@@ -357,7 +542,110 @@ table{
     .bar-chart {
         width: 50%;
     }
+
+    h3{
+        line-height: 1.25em;
+    }
+
+    #offerings{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    #results{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
 }
 
-
 /* MEDIA QUERIES (LARGE) */
+
+@media screen and (min-width: 1024px) {
+    #results {
+        grid-template-columns: 1fr 1fr;
+    }
+    .results-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .results-table {
+        width: 50%;
+    }
+    .bar-chart {
+        width: 50%;
+    }
+
+    h3{
+        line-height: 1.25em;
+    }
+
+    #offerings{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        overflow: hidden;
+    }
+
+    #provresults{
+        overflow: hidden;
+    }
+
+    #form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        row-gap: 5px;
+    }
+
+    label[for="fullName"]{
+		grid-column-start: 1;
+        grid-row-start: 1;
+	}
+
+    #fullName{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    label[for="emailAddress"]{
+        grid-column-start: 2;
+    }
+
+    #emailAddress{
+        grid-column-start: 2;
+    }
+
+    label[for="companyName"]{
+        grid-column-start: 1;
+    }
+
+    #companyName{
+        grid-column-start: 1;
+    }
+
+    label[for="industry"]{
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    #industry{
+        grid-column-start: 2;
+    }
+
+    label[for="help"]{
+        grid-column-start: 1;
+    }
+
+    #help{
+        grid-column-start: 1;
+    }
+
+    #submitButton{
+        grid-column-start: 2;
+        height: 50%;
+    }
+}
