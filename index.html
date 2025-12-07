@@ -10,32 +10,35 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body class="container">
+<body>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
-    <section id="header">
+    <section class="header">
+        <div class="logo"></div>
         <h1>Vanguard</h1>
-    </section>
-    <section id="nav">
-        <h2>Main Navigation</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <section id="nav">
+            <h2>Main Navigation</h2>
+            <ul id="links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
     </section>
 
     <section id="innovation">
-        <h2>Innovation & Investment</h2>
-        <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-        <a href="">Request a Consultation</a>
+        <section class="innovcontain"
+            <h2>Innovation & Investment</h2>
+            <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
+            <a href="">Request a Consultation</a>
+        </section>
     </section>
 
-    <section id="expertise">
+    <section id="expertise" class="container">
         <h2>Our Expertise. Your Edge.</h2>
-        <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
+        <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.</p>
     </section>
 
-    <section id="whatweoffer">
+    <section id="whatweoffer" class="container">
         <h2>What We Offer</h2>
         <section id="growthconsult">
             <h3>Strategic Growth Consulting</h3>
@@ -62,10 +65,10 @@
             <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
         </section>
     </section>
-    <section id="results">
+    <section id="provresults">
         <h2>Proven Results</h2>
         <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
-        <section id="results">
+        <section id="results" class="container">
             <h3>Profits</h3>
             <section class="results-container">
                 <table class="results-table">
@@ -106,7 +109,7 @@
                     </tr>
                 </table>
             </section>
-            <section id="growth">
+            <section id="growth" class="container">
                 <h3>Growth</h3>
     <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
                     <div  id="bar-chart" class="bar-chart">

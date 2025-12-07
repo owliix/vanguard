@@ -74,13 +74,46 @@ html{
 h1{
     font-size: 2em;
     font-weight: bold;
-    padding: 10px;
-    padding-left: 70px;
+    /* padding: 10px;
+    padding-left: 70px; */
     color: var(--blue);
 }
 
-#header{
-    margin: 30px;
+h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header{
+    background-color: var(--black);
+    padding: 40px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+}
+
+#nav > h2{
+    visibility: hidden;
+}
+
+.header> h1{
+    grid-column-start: 2;
+    padding-top: 20px;
+}
+
+#nav{
+    grid-column-start: -1;
+    grid-column-end: -1;
+    text-align: center;
+}
+
+li > a{
+    text-decoration: none;
 }
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -102,15 +135,157 @@ h1{
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
-#header{
+.logo{
     content: "";
-
     left:-.5rem;
+    margin-top: 10px;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
 }
+
+.innovcontain > h2{
+    font-size: 2em;
+}
+
+#expertise{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#expertise > h2{
+    margin: 20px;
+}
+
+#expertise > p{
+    margin-top: 5px;
+    line-height: 1.25em;
+}
+
+#whatweoffer{
+    margin-top: 20px;
+    line-height: 1.25em;
+}
+
+#whatweoffer > h2{
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#growthconsult{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#growthconsult > h3{
+    margin: 15px;
+}
+
+#investmentsol{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#investmentsol > h3{
+    margin: 15px;
+}
+
+#businessaccel{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#businessaccel > h3{
+    margin: 15px;
+}
+
+#digtransform{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#digtransform > h3{
+    margin: 15px;
+}
+
+#advisory{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#advisory> h3{
+    margin: 15px;
+}
+
+#corpinnov{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 80px;
+}
+
+#corpinnov > h3{
+    margin: 15px;
+}
+
+#provresults{
+    background-color: var(--blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#provresults > h2{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    margin-left: 50px;
+    color: var(--white);
+}
+
+#provresults > p{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--white);
+    line-height: 1.25em;
+}
+
+#results > h3{
+    margin: 20px;
+    color: var(--white);
+    font-size: 2em;
+}
+
+table{
+
+}
+
+#growth > h3{
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--white);
+    margin-left: -10px;
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -157,6 +332,15 @@ h1{
     animation: stepUp 1s ease-in-out forwards;
 }
 
+#contactUs{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#footer{
+    background-color: var(--black);
+    color: var(--white);
+}
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
